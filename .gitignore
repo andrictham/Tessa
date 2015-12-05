@@ -1,2 +1,4 @@
-.meteor/local
+I.meteor/local
 .meteor/meteorite
+bin/
+lib/
