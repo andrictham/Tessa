@@ -53,3 +53,19 @@ CarsController = RouteController.extend({
   onStop: function () {
   }
 });
+<<<<<<< HEAD
+=======
+
+CarsController = RouteController.extend({
+  subscriptions: function () {
+    this.subscribe('cars');
+  },
+  data: function () {
+  },
+  create: function() {
+    this.render('CreateCar', {});
+  }
+});
+
+
+>>>>>>> testing
