@@ -43,3 +43,6 @@
 // 	@include vertical-center;
 // }
 
+.btn {
+	@extend .button;
+}
