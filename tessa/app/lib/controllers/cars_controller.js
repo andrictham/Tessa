@@ -53,8 +53,6 @@ CarsController = RouteController.extend({
   onStop: function () {
   }
 });
-<<<<<<< HEAD
-=======
 
 CarsController = RouteController.extend({
   subscriptions: function () {
@@ -68,4 +66,3 @@ CarsController = RouteController.extend({
 });
 
 
->>>>>>> testing
