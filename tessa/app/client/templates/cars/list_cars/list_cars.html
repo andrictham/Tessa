@@ -1,5 +1,30 @@
 <template name="ListCars">
-  <div class="list-cars">
-    <h1>Find me in app/client/templates/cars/list_cars/list_cars</h1>
-  </div>
+  <h1>Records List</h1>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Year of Death</th>
+        <th>Ethnicity</th>
+        <th>Religion</th>
+        <th>Postal Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cars}}
+        <tr>
+          <td>{{Name}}</td>
+          <td>{{Age}}</td>
+          <td>{{Year of Death}}</td>
+          <td>{{Ethnicity}}</td>
+          <td>{{Religion}}</td>
+          <td>{{Postal Code}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+
+  
 </template>
