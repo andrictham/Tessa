@@ -10,3 +10,11 @@ Router.route('/', {
   controller: 'HomeController',
   where: 'client'
 });
+
+
+Router.route('/input/create', {
+  name: 'inputPerson',
+  controller: 'InputController',
+  action: 'create',
+  where: 'client'
+});
