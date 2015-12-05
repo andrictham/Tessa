@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Input: Event Handlers */
+/* CreateCar: Event Handlers */
 /*****************************************************************************/
-Template.Input.events({
+Template.CreateCar.events({
 });
 
 /*****************************************************************************/
-/* Input: Helpers */
+/* CreateCar: Helpers */
 /*****************************************************************************/
-Template.Input.helpers({
+Template.CreateCar.helpers({
 });
 
 /*****************************************************************************/
-/* Input: Lifecycle Hooks */
+/* CreateCar: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Input.onCreated(function () {
+Template.CreateCar.onCreated(function () {
 });
 
-Template.Input.onRendered(function () {
+Template.CreateCar.onRendered(function () {
 });
 
-Template.Input.onDestroyed(function () {
+Template.CreateCar.onDestroyed(function () {
 });
