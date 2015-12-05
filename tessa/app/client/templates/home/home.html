@@ -4,11 +4,36 @@
   	<button class="button hollow large" data-toggle="exampleModal3">+ Add Metric</button>
   	<div id='mapdiv' style='height:450px; margin: 0.5em 0;'></div>
 
-  	<div class="slider" data-slider data-initial-start="50" data-end="200">
+  	<!-- <div class="slider" data-slider data-initial-start="50" data-end="200">
   <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
   <span class="slider-fill" data-slider-fill></span>
   <input type="hidden">
-</div>
+</div> -->
+
+
+
+<div id="year-slider" class="no-ui-slider">
+    <div class="slider"></div>
+    <ul class="slider-labels eleven-columns">
+      <li>1920</li>
+      <li>1930</li>
+      <li>1940</li>
+      <li>1950</li>
+      <li>1960</li>
+      <li>1970</li>
+      <li>1980</li>
+      <li>1990</li>
+      <li>2000</li>
+      <li class="active">2010</li>
+      <li>2020</li>
+    </ul>
+  </div>
+
+
+
+
+
+
   </div>
 </div>
 
@@ -101,6 +126,54 @@ maxZoom: 18,
 		   .setContent('You are here!')
 		   .openOn(map);					
 	}
+
+
+
+
+
+	/* EXAMPLE CODE */
+$(function() {
+  $("#year-slider .slider").noUiSlider({
+    start: 9,
+    step: 1,
+    connect: "lower",
+    range: {
+      'min': 0,
+      'max': 10
+    },
+    serialization: {
+      format: {
+        decimals: 0
+      }
+    }
+  });
+  
+  $('#year-slider .slider').on('change', function(){
+		highlightLabel($(this).val());
+	});
+  
+  $('#year-slider .slider').on('slide', function(){
+    highlightLabel($(this).val());
+  });
+  
+  $("#year-slider .slider-labels").on("click", "li", function() { 
+    $('#year-slider .slider').val($(this).index());
+    highlightLabel($(this).index());
+  });
+  
+  function highlightLabel($this) {
+    $('#year-slider .slider-labels li').removeClass('active');
+    var index = parseInt($this) + 1;
+    var selector = '#year-slider .slider-labels li:nth-child(' + index + ')';
+    $(selector).addClass('active');
+  }
+  
+});
+/* END EXAMPLE CODE */
+
+
+
+
 
 </script>
 
