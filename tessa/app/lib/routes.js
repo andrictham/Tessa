@@ -12,9 +12,9 @@ Router.route('/', {
 });
 
 
-Router.route('/input/create', {
-  name: 'inputPerson',
-  controller: 'InputController',
+Router.route('/cars/create', {
+  name: 'createCar',
+  controller: 'CarsController',
   action: 'create',
   where: 'client'
 });
