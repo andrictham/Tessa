@@ -1,30 +1,33 @@
 <template name="ListCars">
-  <h1>Records List</h1>
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Year of Death</th>
-        <th>Ethnicity</th>
-        <th>Religion</th>
-        <th>Postal Code</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each cars}}
+  <div class="row">
+  <div class="home small-12 medium-10 large-10 small-centered columns">
+    <h1>Records List</h1>
+    <table class="table table-hover scroll">
+      <thead>
         <tr>
-          <td>{{Name}}</td>
-          <td>{{Age}}</td>
-          <td>{{Year of Death}}</td>
-          <td>{{Ethnicity}}</td>
-          <td>{{Religion}}</td>
-          <td>{{Postal Code}}</td>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Year of Death</th>
+          <th>Ethnicity</th>
+          <th>Religion</th>
+          <th>Postal Code</th>
         </tr>
-      {{/each}}
-    </tbody>
-  </table>
-
+      </thead>
+      <tbody>
+        {{#each cars}}
+          <tr>
+            <td>{{Name}}</td>
+            <td>{{Age}}</td>
+            <td>{{Year of Death}}</td>
+            <td>{{Ethnicity}}</td>
+            <td>{{Religion}}</td>
+            <td>{{Postal Code}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
 
   
 </template>

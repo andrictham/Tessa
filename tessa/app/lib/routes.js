@@ -11,14 +11,14 @@ Router.route('/', {
   where: 'client'
 });
 
-Router.route('/cars/create', {
+Router.route('/records/create', {
   name: 'createCar',
   controller: 'CarsController',
   action: 'create',
   where: 'client'
 });
 
-Router.route('/cars', {
+Router.route('/records', {
   name: 'carsList',
   controller: 'CarsController',
   action: 'list',

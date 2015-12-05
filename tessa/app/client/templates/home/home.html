@@ -1,8 +1,78 @@
 <template name="Home">
 <div class="row">
   <div class="home small-12 medium-10 large-8 small-centered columns">
+  	<button class="button hollow large" data-toggle="exampleModal3">+ Add Metric</button>
   	<div id='mapdiv' style='height:500px;'></div>
+
+  	<div class="slider" data-slider data-initial-start="50" data-end="200">
+  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+  <span class="slider-fill" data-slider-fill></span>
+  <input type="hidden">
+</div>
   </div>
+</div>
+
+<div class="large reveal" id="exampleModal3" data-reveal>
+<div class="row">
+	<ul class="tabs text-center" data-tabs id="example-tabs">
+	  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Metric</a></li>
+	  <li class="tabs-title"><a href="#panel2">Filter by</a></li>
+	</ul>
+  <div class="tabs-content" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panel1">
+    <a class="large button" href="#">Life Expectancy</a>
+    <a class="large button" href="#">Median Income</a>
+    <a class="large button" href="#">Citizenship Status</a>
+    <a class="large button hollow" href="#">Add Custom Metric</a>
+  </div>
+  <div class="tabs-panel" id="panel2">
+  	<div class="row">
+  	<h4>Age Range</h4>
+	    <div class="slider" data-slider data-initial-start="0" data-initial-end="85">
+	  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+	  <input type="hidden">
+	  <input type="hidden">
+	  </div>
+
+	  <div class="row">
+	  	<div class="small-12 columns">
+	 	<h4>Religious Group</h4>
+
+	    <a class="small button" href="#">Life Expectancy</a>
+	    <a class="small button" href="#">Median Income</a>
+	    <a class="small button" href="#">Citizenship Status</a>
+  
+	 	</div>
+	</div>
+
+	<div class="row">
+	  	<div class="small-12 columns">
+	 	<h4>Ethinicity</h4>
+	 	<a class="small button" href="#">Chinese</a>
+	    <a class="small button" href="#">Malay</a>
+	    <a class="small button" href="#">Indian</a>
+	    <a class="small button" href="#">Indonesian</a>
+	    <a class="small button" href="#">European</a>
+	    <a class="small button" href="#">Japanese</a>
+	    <a class="small button" href="#">African</a>
+	 	</div>
+	</div>
+</div>
+  </div>
+</div>
+  
+
+ <div class="row" style="margin-top:20px;">
+  	<div class="small-11 small-centered columns">
+	  <a class="large expanded button primary" href="#">Done</a>
+	</div>
+	</div>
+
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button></div>
 </div>
 
 <script>

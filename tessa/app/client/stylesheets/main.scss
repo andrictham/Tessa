@@ -39,10 +39,28 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 
-// .top-bar-left {
-// 	@include vertical-center;
-// }
 
 .btn {
 	@extend .button;
+}
+
+.top-bar-left ul.menu.accordion-menu {
+    padding-top: 0.2em;
+}
+
+li.tabs-title a {
+    font-size: 2rem;
+}
+
+ul#example-tabs {
+	@include horizontal-center;
+}
+
+.tabs-panel {
+    padding-top: 8rem;
+}
+
+li.menu-text a{
+	color:$primary-color !important;
+	font-size:200%;
 }
