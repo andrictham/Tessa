@@ -38,11 +38,7 @@ Cars.attachSchema(new SimpleSchema({
     //allowedValues: ['Chinese', 'Malay', 'Indian', 'Others'],
     max: 10000
   },
-  religion: {
-    type: String,
-    label: "Religion",
-    optional: true
-  },
+
   postalcode: {
     type: Number,
     label: "Postal Code",
