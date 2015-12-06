@@ -29,14 +29,14 @@ Cars.attachSchema(new SimpleSchema({
   },
   yearofdeath: {
     type: Number,
-    label: "Year of Death",
+    label: "Date of Death",
     optional: false
   },
   ethnicity: {
     type: String,
-    label: "Ethnicity",
+    label: "Family and Friends",
     //allowedValues: ['Chinese', 'Malay', 'Indian', 'Others'],
-    max: 100
+    max: 10000
   },
   religion: {
     type: String,
