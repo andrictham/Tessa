@@ -28,7 +28,7 @@ Cars.attachSchema(new SimpleSchema({
     optional: false
   },
   yearofdeath: {
-    type: Number,
+    type: String,
     label: "Date of Death",
     optional: false
   },
